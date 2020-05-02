@@ -1,11 +1,8 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: [
-      './app/**/*.js',
-      './app/**/*.vue'
-    ],
-  },
+  purge: [
+    './app/**/*.js',
+    './app/**/*.vue'
+  ],
   theme: {
     extend: {},
   },
