@@ -213,14 +213,11 @@ module.exports = env => {
             {
                 test: /[\/|\\]app\.css$/,
                 use: [
-                    // 'nativescript-dev-webpack/style-hot-loader',
-                    // {
-                    //     loader: "nativescript-dev-webpack/css2json-loader",
-                    //     options: { useForImports: true }
-                    // },
-                    // {
-                    //     loader: 'extract-loader'
-                    // },
+                    'nativescript-dev-webpack/style-hot-loader',
+                    {
+                        loader: "nativescript-dev-webpack/css2json-loader",
+                        options: { useForImports: true }
+                    },
                     {
                         loader: 'postcss-loader'
                     }
